@@ -1,0 +1,157 @@
+
+
+body {
+  font-family: "Playfair Display", serif;
+  background-color: #0d0d0d;
+  color: white;
+  margin: 0;
+}
+
+header {
+  background-color: #0d0d0d;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #f4acb7;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #f4acb7;
+  margin: 0;
+}
+
+header.encabezado {
+  background-color: #0d0d0d;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #f4acb7;
+  position: relative;
+}
+
+/* Imagen con filtro encima */
+.imagen-fondo {
+  position: relative;
+  display: inline-block;
+}
+
+.imagen-fondo .logo {
+  width: 100px;
+  border-radius: 8px;
+  display: block;
+}
+
+.imagen-fondo .filtro {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f4acb7;
+  opacity: 0.5; /* Puedes ajustar esto para más o menos intensidad */
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.logo {
+  width: 100px;
+  /* margin-bottom: 10px; */
+  border-radius: 8px;
+}
+
+nav {
+  background-color: #0d0d0d;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f4acb7;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+section {
+  padding: 2rem;
+}
+
+h2 {
+  color: #f4acb7;
+  border-bottom: 1px solid #f4acb7;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.libro {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.libro img {
+  width: 130px;
+  border-radius: 6px;
+  margin-right: 1.5rem;
+}
+
+.libro p {
+  margin: 0.3rem 0;
+}
+
+.precio {
+  color: #f4acb7;
+  font-weight: bold;
+}
+
+.btn {
+  background-color: #f4acb7;
+  color: #0d0d0d;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ffc0cb;
+}
+
+.carrito,
+.contacto,
+.formulario {
+  background-color: #1a1a1a;
+  margin: 2rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #f4acb7;
+  border-radius: 5px;
+  font-family: "Playfair Display", serif;
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+footer {
+  text-align: center;
+  color: #f4acb7;
+  margin-top: 2rem;
+  padding: 1rem 0;
+}

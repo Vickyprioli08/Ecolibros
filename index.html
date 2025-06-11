@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecolibros</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="imagen-fondo">
+        <img src="maquina.jpg" class="logo" />
+        <div class="filtro"></div>
+      </div>
+      <h1>Ecolibros</h1>
+      <div style="text-align: center; margin: 20px;">
+  <input
+    type="text"
+    id="buscador"
+    placeholder="Buscar un libro..."
+    onkeyup="filtrarLibros()"
+    style="padding: 10px; width: 80%; max-width: 400px; border-radius: 10px; border: 1px solid #ccc;"
+  />
+</div>
+    </header>
+
+    <nav>
+  <a href="#misterio">Misterio</a>
+  <a href="#fantasia">Fantasía/Ficción</a>
+  <a href="#romance">Romance</a>
+  <a href="#autoconclusivos">Autoconclusivos</a>
+  <a href="#policiales">Policiales</a>
+  <a href="#terror">Terror/Thriller</a>
+</nav>
+
+    <section id="fantasia">
+      <h2>Fantasía/ficcion</h2>
+      <div class="libro">
+        <img
+          src="HOPENDATH 1.jpg"
+          alt="HOPENDATH 1"
+        />
+        <div>
+          <p><strong>HOPENDATH 1. Rebelión roja</strong></p>
+          <p class="precio">Precio: $10.000</p>
+          <p>Condiciones: No incluye separadores.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('HOPENDATH 1. Rebelión roja', 10000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="HOPENDATH 3.jpg"
+          alt="HOPENDATH 3"
+        />
+        <div>
+          <p><strong>HOPENDATH 3. Era acromatica</strong></p>
+          <p class="precio">Precio: $11.000</p>
+          <p>Condiciones: Firmado por la autora, no incluye separadores, consultar detalles!</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('HOPENDATH 3. Era acromatica', 11000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="libro">
+        <img
+          src="La selección.jpg"
+          alt="La selección"
+        />
+        <div>
+          <p><strong>La selección</strong></p>
+          <p class="precio">Precio: $14.500</p>
+          <p>Condiciones: Pequeño detalle al lado de la portada.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('La selección', 14500)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="libro">
+        <img
+          src="El mar de los monstruos.jpg"
+          alt="El mar de los monstruos novela gráfica"
+        />
+        <div>
+          <p><strong>El mar de los monstruos novela gráfica</strong></p>
+          <p class="precio">Precio: $18.000</p>
+          <p>Condiciones: Nuevo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('El mar de los monstruos novela gráfica', 18000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="libro">
+        <img
+          src="Winter.jpg"
+          alt="Winter"
+        />
+        <div>
+          <p><strong>Winter</strong></p>
+          <p class="precio">Precio: $14.500</p>
+          <p>Condiciones: Muy buen estado.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Winter', 14500)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+ <div class="libro">
+        <img
+          src="Moxie.jpg"
+          alt="Moxie"
+        />
+        <div>
+          <p><strong>Moxie</strong></p>
+          <p class="precio">Precio: $13.000</p>
+          <p>Condiciones: Perfecto estado, edición especial.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Moxie', 13000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+ <div class="libro">
+        <img
+          src="oscura.jpg"
+          alt="Una magia mas ocura"
+        />
+        <div>
+          <p><strong>Una magia mas ocura</strong></p>
+          <p class="precio">Precio: $28.000</p>
+          <p>Condiciones: Nuevo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Una magia mas ocura', 28000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="libro">
+        <img
+          src="retrato.jpg"
+          alt="El retrato de Dorian Grey"
+        />
+        <div>
+          <p><strong>El retrato de Dorian Grey</strong></p>
+          <p class="precio">Precio: $8.000</p>
+          <p>Condiciones: Está viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('El retrato de Dorian Grey', 8000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="alaska2.jpg"
+          alt="Buscando a Alaska"
+        />
+        <div>
+          <p><strong>Buscando a Alaska</strong></p>
+          <p class="precio">Precio: $7.000</p>
+          <p>Condiciones:  Borde del título de adentro rodeado de lápiz azul.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Buscando a Alaska', 7000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="libro">
+        <img
+          src="brujamar.jpg"
+          alt="La bruja del mar"
+        />
+        <div>
+          <p><strong>La bruja del mar</strong></p>
+          <p class="precio">Precio: $8.000</p>
+          <p>Condiciones:  Tiene detalles (marcas) en la portada.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('La bruja del mar', 8000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="cura mortal.jpg"
+          alt="La cura mortal"
+        />
+        <div>
+          <p><strong>La cura mortal</strong></p>
+          <p class="precio">Precio: $15.000</p>
+          <p>Condiciones: Excelente estado.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('La cura mortal', 15000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="libro">
+        <img
+          src="Divergente.jpg"
+          alt="Divergente "
+        />
+        <div>
+          <p><strong>Divergente </strong></p>
+          <p class="precio">Precio: $10.000</p>
+          <p>Condiciones: Viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Divergente ', 10000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="insurgente.jpg"
+          alt="Insurgente "
+        />
+        <div>
+          <p><strong>Divergente </strong></p>
+          <p class="precio">Precio: $10.000</p>
+          <p>Condiciones: Viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Insurgente ', 10000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="leal.jpg"
+          alt="Leal"
+        />
+        <div>
+          <p><strong>Leal </strong></p>
+          <p class="precio">Precio: $10.000</p>
+          <p>Condiciones: Viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Leal ', 10000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="cuatro.jpg"
+          alt="Cuatro"
+        />
+        <div>
+          <p><strong>Cuatro </strong></p>
+          <p class="precio">Precio: $10.000</p>
+          <p>Condiciones: Viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Cuatro', 10000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="romance">
+      <h2>Romance</h2>
+      <div class="libro">
+        <img
+          src="https://images.cdn3.buscalibre.com/fit-in/360x360/15/f4/15f40f6f57bebd15941e38932203f904.jpg"
+          alt="Bajo la misma estrella"
+        />
+        <div>
+          <p><strong>Bajo la misma estrella</strong></p>
+          <p class="precio">Precio: $12.000</p>
+          <p>Condiciones: Buen estado, algunas páginas manchadas.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Bajo la misma estrella', 12000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+    
+    <div class="libro">
+        <img
+          src="Alaska.jpg"
+          alt="El día que dejó de nevar en Alaska"
+        />
+        <div>
+          <p><strong>El día que dejó de nevar en Alaska</strong></p>
+          <p class="precio">Precio: $11.000</p>
+          <p>Condiciones: Un poco viejo y lastimado.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('El día que dejó de nevar en Alaska', 11000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="Amor.jpg"
+          alt="Amor y gelato"
+        />
+        <div>
+          <p><strong>Amor y gelato</strong></p>
+          <p class="precio">Precio: $10.000</p>
+          <p>Condiciones: Muy buen estado.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Amor y gelato', 10000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="romeo.jpg"
+          alt="Romeo y Julieta. Edicion libertador"
+        />
+        <div>
+          <p><strong>Romeo y Julieta. Edicion libertador</strong></p>
+          <p class="precio">Precio: $11.000</p>
+          <p>Condiciones: Nuevo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Romeo y Julieta. Edicion libertador', 11000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="culpa mia.jpg"
+          alt="Culpa mía"
+        />
+        <div>
+          <p><strong>Culpa mía</strong></p>
+          <p class="precio">Precio: $12.000</p>
+          <p>Condiciones: Buen estado.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Culpa mía', 12000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="libro">
+        <img
+          src="culpa tuya.jpg"
+          alt="Culpa tuya"
+        />
+        <div>
+          <p><strong>Culpa tuya</strong></p>
+          <p class="precio">Precio: $12.000</p>
+          <p>Condiciones: Buen estado.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Culpa tuya', 12000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="culpa nuestra.jpg"
+          alt="Culpa nuestra"
+        />
+        <div>
+          <p><strong>Culpa nuestra</strong></p>
+          <p class="precio">Precio: $12.000</p>
+          <p>Condiciones: Buen estado.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Culpa nuestra', 12000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="ebano.jpg"
+          alt="Ebano"
+        />
+        <div>
+          <p><strong>Ebano</strong></p>
+          <p class="precio">Precio: $16.000</p>
+          <p>Condiciones: Nuevo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Ebano', 16000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="marfil.jpg"
+          alt="Marfíl"
+        />
+        <div>
+          <p><strong>Marfíl</strong></p>
+          <p class="precio">Precio: $16.000</p>
+          <p>Condiciones: Nuevo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Marfíl', 16000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="casi amor.jpg"
+          alt="Casi amor"
+        />
+        <div>
+          <p><strong>Casi amor</strong></p>
+          <p class="precio">Precio: $13.000</p>
+          <p>Condiciones: Nuevo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Casi amor', 13000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="policiales">
+      <h2>Policiales</h2>
+      </section>
+
+ <section id="terror">
+      <h2>Terror/thriller</h2>
+<div class="libro">
+        <img
+          src="sk1.jpg"
+          alt="Todo es eventual 1"
+        />
+        <div>
+          <p><strong>Todo es eventual 1</strong></p>
+          <p class="precio">Precio: $12.000</p>
+          <p>Condiciones: Buen estado pero es viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Todo es eventual 1', 12000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+<div class="libro">
+        <img
+          src="sk2.jpg"
+          alt="Todo es eventual 2"
+        />
+        <div>
+          <p><strong>Todo es eventual 2</strong></p>
+          <p class="precio">Precio: $12.000</p>
+          <p>Condiciones: Buen estado pero es viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Todo es eventual 2', 12000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="sk3.jpg"
+          alt="Las dos después de medianoche"
+        />
+        <div>
+          <p><strong>Las dos después de medianoche</strong></p>
+          <p class="precio">Precio: $12.000</p>
+          <p>Condiciones: Buen estado pero es viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('Las dos después de medianoche', 12000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+<div class="libro">
+        <img
+          src="sk4.jpg"
+          alt="El cazador de sueños"
+        />
+        <div>
+          <p><strong>El cazador de sueños</strong></p>
+          <p class="precio">Precio: $10.000</p>
+          <p>Condiciones: Buen estado pero es viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito('El cazador de sueños', 10000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="libro">
+        <img
+          src="sk5.jpg"
+          alt=" las cuatro después de medianoche"
+        />
+        <div>
+          <p><strong> las cuatro después de medianoche</strong></p>
+          <p class="precio">Precio: $12.000</p>
+          <p>Condiciones: Buen estado pero es viejo.</p>
+          <button
+            class="btn"
+            onclick="agregarAlCarrito(' las cuatro después de medianoche', 12000)"
+          >
+            Agregar al carrito
+          </button>
+        </div>
+      </div>
+    </section>
+    </section>
+
+    <section class="carrito">
+      <h2>Carrito de compras</h2>
+      <div id="itemsCarrito"></div>
+     <p>Envío por Correo Argentino: ¡Consultá el precio según tu zona!</p>
+      <p>
+       <strong>Total de libros: $<span id="totalConEnvio">0</span></strong>
+        <a id="btnWhatsapp" href="#" target="_blank">
+  <button class="btn">Pagar por WhatsApp</button>
+</a>
+</a>
+</a>
+      </p>
+    </section>
+
+    <section class="contacto">
+      <h2>Contacto</h2>
+      <p>
+      <p>Teléfono: ‪+54 9 11 2889-3523‬</p>
+      <p>
+        Instagram:
+        <a
+          href="https://instagram.com/ecolibros_"
+          target="blank"
+          style="color: #f4acb7"
+          >@ecolibros</a
+        >
+      </p>
+      <p>
+        <strong>Para pagar por Mercado Pago, comunicate antes conmigo.</strong>
+      </p>
+    </section>
+
+    <section class="formulario">
+      <h2>Preguntas / Consultas</h2>
+      <form>
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="email" placeholder="Tu email" required />
+        <textarea rows="4" placeholder="Escribí tu mensaje..."></textarea>
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+      <br />
+      <h3>Iniciar sesión</h3>
+      <input type="text" placeholder="Usuario" />
+      <input type="password" placeholder="Contraseña" />
+      <button class="btn">Iniciar sesión</button>
+    </section>
+
+    <footer>&copy; 2025 Ecolibros - Todos los derechos reservados</footer>
+
+    <script>
+  let carrito = [];
+
+  function agregarAlCarrito(nombre, precio) {
+    carrito.push({ nombre, precio });
+    renderizarCarrito();
+  }
+
+  function eliminarDelCarrito(index) {
+    carrito.splice(index, 1);
+    renderizarCarrito();
+  }
+
+  function renderizarCarrito() {
+    const contenedor = document.getElementById("itemsCarrito");
+    const whatsappBtn = document.getElementById("btnWhatsapp");
+    contenedor.innerHTML = "";
+    let total = 0;
+    let mensaje = "Hola! Quiero finalizar la compra con estos productos:%0A";
+
+    carrito.forEach((item, index) => {
+      total += item.precio;
+      mensaje += `- ${item.nombre}: $${item.precio}%0A`;
+
+      const div = document.createElement("div");
+      div.className = "item-carrito";
+      div.innerHTML = `
+  <span>${item.nombre} - $${item.precio}</span>
+  <button class="btn" onclick="eliminarDelCarrito(${index})">Eliminar</button>
+`;
+;
+      contenedor.appendChild(div);
+    });
+
+   mensaje += `%0ATotal: $${total}`;
+
+    document.getElementById("totalConEnvio").innerText = total;
+
+    // Actualizar el enlace con el mensaje codificado
+    whatsappBtn.href = "https://wa.me/5491128893523?text=" + encodeURIComponent(mensaje);
+    const texto = libro.innerText.toLowerCase();
+    if (texto.includes(filtro)) {
+      libro.style.display = "";
+    } else {
+      libro.style.display = "none";
+    }
+  };
+function filtrarLibros() {
+  const input = document.getElementById("buscador");
+  const filtro = input.value.toLowerCase();
+  const libros = document.querySelectorAll(".libro");
+
+  libros.forEach((libro) => {
+    const texto = libro.innerText.toLowerCase();
+    if (texto.includes(filtro)) {
+      libro.style.display = "";
+    } else {
+      libro.style.display = "none";
+    }
+  });
+}
+</script>
+  </body>
+</html>
